@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <title>Ecommerce Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="intro">
+
+        <div id="intro">
+
+            <section class="menu">
+                <div id="logo">
+                    <span>
+                        <img src="images/EMS.svg" alt="logo">
+                    </span>
+                </div>
+                <div id="ulDiv">
+                    <ul>
+                        <a href="#intro"><li>Intro</li></a>
+                        <a href="#about"><li>About</li></a>
+                        <a href="#shop"><li>Shop</li></a>
+                    </ul>
+                </div>
+                <div class="cartBtn">
+                    <span id="move">
+                        <button id="cartBtn">
+                            <img src="images/cart.svg" alt="cart" id="cartImg">
+                            <span id="counter">0</span>
+                        </button>
+                    </span>
+                </div>
+            </section>
+        
+
+
+            <section id="modals">
+                <div id="container">
+                    <div id="cart">
+                        <table id="cartTable">
+                            <thead>
+                                <tr>
+                                    <th>S/N</th>
+                                    <th>ITEM</th>
+                                    <th>PRICE</th>
+                                    <th>QUANTITY</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+
+                        <div id="formDiv">
+
+                            <form id="validate" action="" method="get" accept-charset="UTF-8">
+                                <fieldset>
+                                    <!--<label for="name">name</label>-->
+
+                                    <input type="text" name="name" id="name" value="" placeholder="Your Name" />
+                                    <span id="error" class="nerror"></span>
+                                </fieldset>
+                                <fieldset>
+                                    <!--<label for="email">email</label>-->
+
+                                    <input type="text" name="email" id="email" value="" placeholder="Your Email" />
+                                    <span id="error" class="eerror"></span>
+                                </fieldset>
+                                <fieldset>
+                                    <!--<label for="name">name</label>-->
+
+                                    <input type="text" name="phone" id="phone" value="" placeholder="Your Phone Number" />
+                                    <span id="error" class="perror"></span>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <div class="fullPrice">
+                            <h4>Total Amount to be Paid</h4>
+                            <h3>&#8358<span id="fullPrice">0</span></h3>
+                        </div>
+                        <div id="buttons">
+                            <button class="close">Continue Shopping</button>
+                            <button id="checkout">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cover">
+                    <div id="summary">
+                        <p></p>
+
+                        <img id="checkImg" src="images/check.svg" alt="" />
+
+                        <h3>Summary</h3>
+
+                        <table id="summaryTable">
+                            <thead>
+
+                                <tr>
+                                    <th>S/N</th>
+                                    <th>ITEM</th>
+                                    <th>QUANTITY</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                        <span class="close">
+                            <button>Ok</button>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section id="row">
+
+                    <div id="col-2">
+                        <div id="heroTest">
+                            <h1>The <br>E-Millenial <br>Store</h1>
+                        </div>
+                    
+                        <div id="col-2Img">
+                            <img src="images/heroImage.png">
+                        </div>
+                    </div>
+                
+                <div id="col-3">
+                    <a href="#shop">
+                        <button>
+                            SHOP NOW
+                        </button>
+                    </a>
+                </div>
+            
+            </section>
+        </div>
+    </section>
+
+
+    <!-- About page -->
+    <div class="aboutus" id="about">
+        <div class="abt">
+            <p>E-Millenial store is an hypothetical online store for gadgets we believe every 'Millenial' or 'Gen-Z' should have today. We've got mobile phones, laptops, smartwatches and other gadgets. Explore all our gadgets and choose the one that suits you.</p>
+        </div>
+    </div>
+
+    <!-- gadgets area -->
+    <section id="shop" class="shop">
+        <div id="shopTitle">
+            <h1>Our Gadgets</h1>
+        </div>
+        <div id="products">
+
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION-->
+
+        <section class="footer">
+            <div id="footer">
+                <img src="images/EMS.svg" alt="logo">
+
+                <p> Designed and Crafted by future Tech Bro </p>
+            </div>
+        </section>
+            
+                
+        
+    
+            
+    
+        <script src="https://js.paystack.co/v1/inline.js"></script>    
+        <script src="cart.js"></script>
+    </body>
+</html>
